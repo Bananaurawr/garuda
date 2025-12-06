@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Transaksi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>🧾 Transaksi</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#" id="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="transaksi-form">
+      <h2>Tambah Transaksi</h2>
+      <form id="form-transaksi">
+        <select id="tipe">
+          <option value="Penjualan">Penjualan</option>
+          <option value="Pembelian">Pembelian</option>
+        </select>
+        <input type="text" id="deskripsi" placeholder="Deskripsi" required />
+        <input type="number" id="jumlah" placeholder="Jumlah (Rp)" required />
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+
+    <section class="transaksi-list">
+      <h2>Riwayat Transaksi</h2>
+      <table id="tabel-transaksi">
+        <thead>
+          <tr>
+            <th>Tipe</th>
+            <th>Deskripsi</th>
+            <th>Jumlah (Rp)</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p id="total">Total: Rp 0</p>
+    </section>
+  </main>
+
+  <script src="transaksi.js"></script>
+</body>
+</html>

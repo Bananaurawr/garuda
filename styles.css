@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('Rubik-Regular.ttf') format('truetype');
+}
+
 /* Color Palette */
 :root {
   --color-tan: #D8BA98;
@@ -8,7 +13,7 @@
 }
 
 body {
-  font-family: nin;
+  font-family: 'Rubik', sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--color-alabaster);
@@ -34,15 +39,36 @@ nav ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
+nav ul li a{
   color: var(--color-alabaster);
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 main {
   padding: 20px;
 }
+
+#dashboard-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+#dashboard-overview h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--color-midnight-blue);
+}
+
+#dashboard-overview p {
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+
 
 .cards-container {
   display: flex;
@@ -139,6 +165,8 @@ footer {
   font-weight: bold;
 }
 
+
+
 .btn-primary.login {
   margin-top: 20px;
   display: inline-block;
@@ -147,6 +175,18 @@ footer {
 .btn-primary:hover {
   background-color: var(--color-light-blue);
   color: var(--color-midnight-blue);
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-maroon);
+  font-size: 1.1rem;
+}
+
+.btn-icon:hover {
+  color: var(--color-light-blue);
 }
 
 .welcome-section {
@@ -228,6 +268,64 @@ footer {
 .btn-outline:hover {
   background-color: var(--color-light-blue);
   color: white;
+}
+
+.transaksi-form, .transaksi-list {
+  max-width: 600px;
+  margin: 30px auto;
+  background: var(--color-alabaster);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.transaksi-form h2, .transaksi-list h2 {
+  text-align: center;
+}
+
+.transaksi-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transaksi-form input, .transaksi-form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-midnight-blue);
+}
+
+.transaksi-form button {
+  padding: 10px;
+  background: var(--color-maroon);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.transaksi-form button:hover {
+  background: var(--color-light-blue);
+  color: var(--color-midnight-blue);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+#total {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: right;
 }
 
 
