@@ -328,4 +328,61 @@ th, td {
   text-align: right;
 }
 
+.analytics-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--color-alabaster);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.analytics-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#price-checker-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#price-checker-form input {
+  padding: 10px;
+  flex: 1;
+  border: 1px solid var(--color-midnight-blue);
+  border-radius: 6px;
+}
+
+#price-checker-form button {
+  padding: 10px 16px;
+  background-color: var(--color-maroon);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#price-checker-form button:hover {
+  background-color: var(--color-light-blue);
+  color: var(--color-midnight-blue);
+}
+
+.analytics-result {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-midnight-blue);
+}
+
+.trend-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  color: var(--color-midnight-blue);
+}
+
+
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Analytics</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>🤖 AI Analytics</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#" id="logout-btn" title="Logout"><i class="fas fa-sign-out-alt"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="analytics-section">
+      <h2>Cek Harga Pasar</h2>
+      <form id="price-checker-form">
+        <input type="text" id="product-name" placeholder="Nama produk..." required />
+        <button type="submit">Cek Harga</button>
+      </form>
+      <div id="price-result" class="analytics-result"></div>
+    </section>
+
+    <section class="analytics-section">
+      <h2>Tren Produk</h2>
+      <p>🔥 Produk yang sedang naik daun minggu ini:</p>
+      <ul class="trend-list">
+        <li>1. Minuman Botol Organik 🧃</li>
+        <li>2. Smart Watch Anak 🕒</li>
+        <li>3. Mouse Wireless RGB 🎮</li>
+        <li>4. Kamera CCTV Mini 📷</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="ai-analytics.js"></script>
+</body>
+</html>
