@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Content Generator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>AI Content Generator</h1>
+    <nav>
+      <ul>
+        <li>
+            <a href="dashboard.html"><i class="fas fa-arrow-left"></i> Dashboard</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-generator">
+      <h2>Generate Konten Otomatis</h2>
+      <form id="content-form">
+        <label for="type">Jenis Konten:</label>
+        <select id="type" required>
+          <option value="">-- Pilih Jenis --</option>
+          <option value="copywriting">Copywriting</option>
+          <option value="script">Script</option>
+        </select>
+
+        <label for="topic">Topik / Produk:</label>
+        <input type="text" id="topic" placeholder="Masukkan topik atau nama produk..." required>
+
+        <label for="tone">Gaya Bahasa:</label>
+        <select id="tone" required>
+          <option value="friendly">Friendly</option>
+          <option value="formal">Formal</option>
+          <option value="funny">Lucu</option>
+          <option value="sales">Sales / Promosi</option>
+        </select>
+
+        <button type="submit">Generate</button>
+      </form>
+
+      <div class="generated-output">
+        <h3>Hasil:</h3>
+        <textarea id="output" rows="10" placeholder="Konten akan muncul di sini..." readonly></textarea>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('content-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Dummy preview (backend will handle real generation)
+      const type = document.getElementById('type').value;
+      const topic = document.getElementById('topic').value;
+      const tone = document.getElementById('tone').value;
+
+      document.getElementById('output').value = `⏳ Mengirim permintaan ke AI untuk membuat ${type} bertema "${topic}" dengan gaya "${tone}"... (response backend akan tampil di sini)`;
+    });
+  </script>
+</body>
+</html>

@@ -18,7 +18,7 @@
   </header>
 
   <main class="hero-main">
-    <p class="tagline">🚀 Optimalkan Bisnis Anda dengan Kekuatan AI</p>
+    <p class="tagline">Optimalkan Bisnis Anda dengan Kekuatan AI 🚀</p>
     <h1 class="headline">Persiapkan & Pantau Penjualan Lebih Cerdas</h1>
     <p class="subtext">Dengan bantuan analitik harga, tren pasar, dan konten AI otomatis.</p>
 
@@ -28,8 +28,58 @@
     </div>
   </main>
 
+  <section id="features" class="features-section">
+    <h2>Fitur Unggulan</h2>
+    <p class="intro-text">Kami bantu bisnis Anda tumbuh lebih cepat dengan teknologi AI yang mudah dipakai.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="assets/transaksi.jpg">
+        <h3>Manajemen Transaksi</h3>
+        <p>Catat dan kelola penjualan serta pembelian bisnis Anda secara real-time.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/ai-analytics.jpg">
+        <h3>AI Analytics</h3>
+        <p>Cek harga, analisis tren, dan ambil keputusan cerdas berbasis data otomatis.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/report.jpg">
+        <h3>Laporan Laba / Rugi</h3>
+        <p>Visualisasi otomatis pemasukan, pengeluaran, dan margin profit Anda.</p>
+      </div>
+      <div class="feature-card">
+        <img src="assets/content.jpg">
+        <h3>AI Content Generator</h3>
+        <p>Bikin copywriting dan skrip konten hanya dengan satu klik, langsung dari dashboard Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="contact-section">
+    <h2>Hubungi Kami</h2>
+    <p class="intro-text">Punya pertanyaan? Kirim pesan ke tim kami melalui form di bawah ini.</p>
+
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Nama Anda" required />
+      <input type="email" id="email" placeholder="Email Anda" required />
+      <textarea id="message" rows="5" placeholder="Pesan Anda..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+
+    <p id="success-msg" style="display:none; margin-top:15px; font-weight:bold;">✅ Pesan berhasil dikirim!</p>
+  </section>
+
   <footer>
     <p>© 2025 Business AI Dashboard</p>
   </footer>
+  <script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Nanti backend bisa proses ini, sekarang tampilkan pesan sukses
+    document.getElementById('contact-form').reset();
+    document.getElementById('success-msg').style.display = 'block';
+  });
+</script>
 </body>
 </html>

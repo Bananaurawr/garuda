@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sessionStorage.setItem('loggedIn', 'true');
       showDashboard();
     } else {
-      alert('Invalid username or password ❌');
+      alert('Invalid username or password');
     }
   });
 

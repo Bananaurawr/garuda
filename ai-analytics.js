@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Simulasi hasil AI price checking
     const simulatedPrice = (Math.random() * 50000 + 20000).toFixed(0);
-    result.innerHTML = `💰 Estimasi harga pasar untuk <strong>${product}</strong> adalah <strong>Rp ${parseInt(simulatedPrice).toLocaleString('id-ID')}</strong>`;
+    result.innerHTML = `Estimasi harga pasar untuk <strong>${product}</strong> adalah <strong>Rp ${parseInt(simulatedPrice).toLocaleString('id-ID')}</strong>`;
     
     form.reset();
   });
