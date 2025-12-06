@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>📊 Business Dashboard</h1>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Transaksi</a></li>
+        <li><a href="#">AI Analytics</a></li>
+        <li><a href="#">Report</a></li>
+        <li><a href="#">AI Content Generator</a></li>
+        <li><a href="#" id="logout-btn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard-overview">
+      <h2>Selamat Datang 👋</h2>
+      <p>Pantau semua fitur utama bisnis Anda dari satu tempat.</p>
+      <div class="cards-container">
+        <div class="card">
+          <h3>🛒 Transaksi</h3>
+          <p>Kelola penjualan dan pembelian.</p>
+          <a href="#">Kelola Transaksi</a>
+        </div>
+        <div class="card">
+          <h3>🤖 AI Analytics</h3>
+          <p>Cek harga pasar & tren terbaru.</p>
+          <a href="#">Lihat Analytics</a>
+        </div>
+        <div class="card">
+          <h3>📈 Laporan</h3>
+          <p>Lihat laba / rugi secara real-time.</p>
+          <a href="#">Buka Laporan</a>
+        </div>
+        <div class="card">
+          <h3>✍️ AI Content Generator</h3>
+          <p>Generate copywriting dan skrip otomatis.</p>
+          <a href="#">Mulai Buat Konten</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Business AI Dashboard</p>
+  </footer>
+
+  <script>
+    const logoutBtn = document.getElementById('logout-btn');
+
+    if (sessionStorage.getItem('loggedIn') !== 'true') {
+      window.location.href = 'login.html';
+    }
+
+    logoutBtn.addEventListener('click', () => {
+      sessionStorage.removeItem('loggedIn');
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>

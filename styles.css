@@ -1,0 +1,157 @@
+/* Color Palette */
+:root {
+  --color-tan: #D8BA98;
+  --color-maroon: #7F0303;
+  --color-alabaster: #EFE8DF;
+  --color-light-blue: #96C0CE;
+  --color-midnight-blue: #0F414A;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-alabaster);
+  color: var(--color-midnight-blue);
+}
+
+header {
+  background-color: var(--color-midnight-blue);
+  color: var(--color-alabaster);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--color-alabaster);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: var(--color-alabaster);
+  border-left: 6px solid var(--color-tan);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-left-color: var(--color-light-blue);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--color-midnight-blue);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: var(--color-maroon);
+  color: var(--color-alabaster);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  background-color: var(--color-light-blue);
+  color: var(--color-midnight-blue);
+}
+
+footer {
+  background-color: var(--color-midnight-blue);
+  color: var(--color-alabaster);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+#login-section {
+  max-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  background: var(--color-alabaster);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#login-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-midnight-blue);
+}
+
+#login-form button {
+  background-color: var(--color-maroon);
+  color: var(--color-alabaster);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: var(--color-light-blue);
+  color: var(--color-midnight-blue);
+}
+
+.btn-primary {
+  background-color: var(--color-maroon);
+  color: var(--color-alabaster);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-primary.login {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-light-blue);
+  color: var(--color-midnight-blue);
+}
+
+.welcome-section {
+  text-align: center;
+  margin-top: 20vh;
+  height: 40vh;
+}
+
